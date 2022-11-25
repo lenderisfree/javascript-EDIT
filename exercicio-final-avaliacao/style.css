@@ -61,11 +61,12 @@ h2{
 main{
     display: flex;
     flex-direction: row;
+    
     background-color: #0F3460;  
 }
 
 
-#containerOne{
+#containerCards{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -73,22 +74,28 @@ main{
 
 }
 
-#containerTwo{
-    display: none ;
-    padding: 30px;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px;
-    min-width: 500px;
+#containerInfo{
     background-color: #E94560;
-    
-   
-    
+    padding: 30px;
+    min-width: 500px;
+    display: none;
     
 }
 
-.divContent{
+.divCardsInfo{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    right: 10%;
+
+    
+   
+  
+}
+
+.divCards{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -123,10 +130,11 @@ footer{
     color: white;
     border: none;
     background: none;
-    text-align: center;
-    position: absolute;
-    bottom: 20px;
+    justify-content: flex-end;
     cursor: pointer;
+    margin-top: 40px;
+    background-color:#ff617c; ;
+
     
 }
 
@@ -140,7 +148,7 @@ footer{
     margin: 22px;
     width: 1340px;
     height: 540px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.894);
         
 
     
@@ -172,6 +180,14 @@ footer{
     
 }
 
+#containerCarousel{
+    display: flex;
+}
+
+#divCarousel{
+    
+    
+}
 
 
 
